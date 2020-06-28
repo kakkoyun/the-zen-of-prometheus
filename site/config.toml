@@ -1,4 +1,25 @@
-baseURL = "hhttps://the-zen-of-prometheus.netlify.app/"
+baseURL = "https://the-zen-of-prometheus.netlify.app/"
 languageCode = "en-us"
 title = "The Zen of Prometheus"
-theme = "yinyang"
+theme = "tale"
+DefaultContentLanguage = "en"
+
+[author]
+  name = "Kemal Akkoyun"
+  homepage = "https://kakkoyun.me/"
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+
+[params]
+mainSections = ["posts"]
+headTitle = "The Zen of Prometheus"
+[[params.socials]]
+name = "Github"
+link = "https://github.com/kakkoyun/the-zen-of-prometheus"
+[[params.socials]]
+name = "About Me"
+link = "https://kakkoyun.me"
