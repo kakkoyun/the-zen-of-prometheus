@@ -1,25 +1,44 @@
 baseURL = "https://the-zen-of-prometheus.netlify.app/"
-languageCode = "en-us"
-title = "The Zen of Prometheus"
-theme = "tale"
+languageCode = "en"
 DefaultContentLanguage = "en"
+title = "The Zen of Prometheus"
+theme = "anatole"
+summarylength = 10
+enableEmoji = true
 
-[author]
-  name = "Kemal Akkoyun"
-  homepage = "https://kakkoyun.me/"
+# Enable Disqus
+#disqusShortname = ""
 
-[languages]
-  [languages.en]
-    contentDir = "content/en"
-    languageName = "English"
-    weight = 1
+# Google Analytics
+#googleAnalytics = "UA-123-45"
 
 [params]
-mainSections = ["posts"]
-headTitle = "The Zen of Prometheus"
-[[params.socials]]
-name = "Github"
-link = "https://github.com/kakkoyun/the-zen-of-prometheus"
-[[params.socials]]
-name = "About Me"
-link = "https://kakkoyun.me"
+title = "The Zen of Prometheus"
+author = "Kemal Akkoyun"
+description = "Ohmmm"
+profilePicture = "images/prometheus.svg"
+keywords = ""
+favicon = "favicons/"
+customCss = []
+mainSections = ["home"]
+
+## Math settings
+[params.math]
+enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
+use = "katex"  # options: "katex", "mathjax". default is "katex".
+
+## Social links
+[[params.socialIcons]]
+icon = "fa-github"
+title = "GitHub"
+url = "https://github.com/kakkoyun/the-zen-of-prometheus"
+
+## Menu items
+
+[menu]
+  [[menu.main]]
+  name = ""
+  identifier = "home"
+  weight = 100
+  url = "/"
+

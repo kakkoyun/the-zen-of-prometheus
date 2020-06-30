@@ -1,6 +1,9 @@
-[submodule "site/themes/yinyang"]
-	path = site/themes/yinyang
-	url = https://github.com/joway/hugo-theme-yinyang.git
-[submodule "site/themes/tale"]
-	path = site/themes/tale
-	url = https://github.com/EmielH/tale-hugo.git
+# [submodule "site/themes/yinyang"]
+# 	path = site/themes/yinyang
+# 	url = https://github.com/joway/hugo-theme-yinyang.git
+# [submodule "site/themes/tale"]
+# 	path = site/themes/tale
+# 	url = https://github.com/EmielH/tale-hugo.git
+[submodule "site/themes/anatole"]
+	path = site/themes/anatole
+	url = https://github.com/lxndrblz/anatole.git
