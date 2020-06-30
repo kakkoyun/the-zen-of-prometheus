@@ -14,8 +14,8 @@ enableEmoji = true
 
 [params]
 title = "The Zen of Prometheus"
-author = "Kemal Akkoyun"
-description = "Ohmmm"
+author = "The Zen of Prometheus"
+description = "Simple, Poetic, Illuminating."
 profilePicture = "images/prometheus.svg"
 keywords = ""
 favicon = "favicons/"
