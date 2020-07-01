@@ -9,12 +9,6 @@ Instrument first, ask questions later. Spread the metrics very liberally! Whiteb
 
 RED, USE and The Four Golder Signals.
 
-## SLx (TODO)
-
-`TODO`
-
-SLx to guide your instrumentation.
-
 # It's all about Labels (TODO)
 
 `TODO`
@@ -37,12 +31,22 @@ Initialize your labels.
 
 [Monitoring Mixins](https://monitoring.mixins.dev/) are everyone's favorite!
 
+## SLx (TODO)
+
+`TODO`
+
+SLx to guide your instrumentation.
+
+https://promtools.dev/
+
 # Symptom based alerts, not caused based (TODO)
 
 Read famous [My Philosophy on Alerting](https://docs.google.com/document/d/199PqyG3UsyXlwieHaqbGiWVa8eMWi8zzAn0YfcApr8Q/edit).
 Use causal metrics for debugging.
 
-# If you can graph it, you can alert on it
+# If you like to graph it, put an alert on it
+
+(If you can graph it, you can alert on it)
 
 `TODO`
 
