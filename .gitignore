@@ -16,5 +16,3 @@ resources
 demo/
 .hugo/*
 !.hugo/version
-
-TODO.md
