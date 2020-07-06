@@ -5,12 +5,10 @@ title = "The Zen of Prometheus"
 theme = "anatole"
 summarylength = 10
 enableEmoji = true
+googleAnalytics = "UA-171709825-1"
 
 # Enable Disqus
 #disqusShortname = ""
-
-# Google Analytics
-#googleAnalytics = "UA-123-45"
 
 [params]
 title = "The Zen of Prometheus"

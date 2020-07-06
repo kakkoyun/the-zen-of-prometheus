@@ -6,8 +6,7 @@ This is a document that's intended to maintained by the Prometheus community. Fe
 
 During development you will never know what questions you need to ask later. Software needs good instrumentation, it's not optional. Metrics are cheap. Use them generously.
 
-The First and the most important rule, if you have to remember only one thing remember this one.
-Instrument all the things!
+The First and the most important rule, if you have to remember only one thing remember this one. Instrument all the things!
 
 ### Measure what users care
 
