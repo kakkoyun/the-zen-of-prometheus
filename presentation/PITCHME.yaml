@@ -1,0 +1,17 @@
+
+
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-START
+theme            : template
+theme-background : [ "#1B1B1B" ]
+theme-headline   : [ "Ubuntu", "#E6522c", "none", "#FFFFFF", "95", "120", "15" ]
+theme-byline     : [ "Raleway", "#FFFFFF", "none", "#E6522C", "100", "110", "15" ]
+theme-text       : [ "Ubuntu", "#FFFFFF", "none", "#EC7F37", "100", "100", "15" ]
+theme-links      : [ "#F1C40F", "#5254F7" ]
+theme-code       : [ "Source Code Pro", "100", "120" ]
+highlight        : tomorrow
+theme-controls   : [ "#C0C0C0" ]
+theme-margins    : [ "0", "15px" ]
+logo             : assets/img/prometheus_logo.png
+logo-position    : top-left
+layout           : center
+# PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
