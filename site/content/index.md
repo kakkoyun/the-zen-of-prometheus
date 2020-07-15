@@ -19,13 +19,13 @@ This doesn't necessarily mean that you should ignore causal metrics. Have them, 
 
 ### Labels are the new hierarchies
 
-**Labels are the new hierarchies**, yet more powerful and flexible. Labels what make Prometheus strong. Using labels one can group and aggregate measurements afterwards. Slice and dice using Labels. Remember [Instrument first, ask questions later](#instrument-first-ask-questions-later), provide much context as possible.
+**Labels are the new hierarchies**, yet more powerful and flexible. Labels are what make Prometheus strong. Using labels, one can group and aggregate measurements afterwards. Slice and dice using Labels. Remember [Instrument first, ask questions later](#instrument-first-ask-questions-later), provide much context as possible.
 
 However, you have to *use labels with care*. The reasons will explain in subsequent rules.
 
 ### Avoid missing metrics
 
-Time series that are not present until something happens are difficult to deal with,to avoid this, export 0 (or NaN, if 0 would be misleading) for any time series you know may exist in advance. You have to initialize your metrics with the zero values to prevent broken dashboards and misfiring alerts. For more detailed explanation check out [Existential issues with metrics](https://www.robustperception.io/existential-issues-with-metrics).
+Time series that are not present until something happens are difficult to deal with. To avoid this, export 0 (or NaN if 0 would be misleading) for any time series you know may exist in advance. You have to initialize your metrics with the zero values to prevent broken dashboards and misfiring alerts. For more detailed explanation check out [Existential issues with metrics](https://www.robustperception.io/existential-issues-with-metrics).
 And also remember, labels create timeseries, so same goes for your labels. Your client libraries can't know what labels you would have. Initialize your metrics with the labels that you would have.
 
 ### Cardinality Matters
@@ -66,7 +66,7 @@ Whenever you handle an error (either by returning it or logging it), you should 
 
 Histograms are powerful.
 
-Creating a correct bucket layout for your histograms is an art. To ensure usefullness of your observations and correctness of your alerts, you have come up with a meaningful bucket layout. And keep in mind that they are [cumulative](https://www.robustperception.io/why-are-prometheus-histograms-cumulative). This is also somewhat conflicting with [Instrument first, ask questions later](#instrument-first-ask-questions-later) because you need to have idea about your latencies before you even measure. To circumvent this issue you can take and iterative approach or use an event system to obtain your latency distribution.
+Creating a correct bucket layout for your histograms is an art. To ensure usefulness of your observations and correctness of your alerts, you have come up with a meaningful bucket layout. And keep in mind that they are [cumulative](https://www.robustperception.io/why-are-prometheus-histograms-cumulative). This is also somewhat conflicting with [Instrument first, ask questions later](#instrument-first-ask-questions-later) because you need to have idea about your latencies before you even measure. To circumvent this issue you can take and iterative approach or use an event system to obtain your latency distribution.
 
 And as always, let your [SLO](https://www.youtube.com/watch?v=X99X-VDzxnw)s guide your bucket layout, create boundaries to match your SLO.
 
@@ -80,7 +80,7 @@ You can't look at dashboards 24/7. Prometheus unified metrics, dashboarding, and
 
 ### If you run it, then you should put an alert on it
 
-Always have an alert -*at least*- on presence and healtiness of your targets. You can't that rely on the things and take action that you can't observe.
+Always have an alert -*at least*- on presence and healthiness of your targets. You can't that rely on the things and take action that you can't observe.
 
 Avoid missing targets and unhealthy targets. All of the client libraries provides `up` metric by default. Use it.
 
@@ -105,7 +105,7 @@ Preserve common and useful labels for your alerts. They are most useful for rout
 
 ---
 
-The inspration behind the idea comes from [The Zen of Go](https://the-zen-of-go.netlify.app), [Go Proverbs](https://go-proverbs.github.io/) and [The Zen of Python](https://zen-of-python.info/).
+The inspiration behind the idea comes from [The Zen of Go](https://the-zen-of-go.netlify.app), [Go Proverbs](https://go-proverbs.github.io/) and [The Zen of Python](https://zen-of-python.info/).
 
 *Thank you very much all others that contributed with their invaluable ideas.*
-> The inital rules are gather from several sources from the community, such as [Prometheus Proverbs](https://www.youtube.com/watch?v=TwH3KXKbJqM) by [Björn Rabenstein](https://github.com/beorn7), [Best Practices and Beastly Pitfalls](https://www.youtube.com/watch?v=_MNYuTNfTb4) by [Julius Volz](https://github.com/juliusv), [Patterns for Instrumenting Your Go Services](https://www.youtube.com/watch?v=LU6D5cNeHks) by [Bartek Plotka](https://github.com/bwplotka) and [Kemal Akkoyun](https://github.com/kakkoyun), [Instrumenting Applications and Alerting with Prometheus](https://www.youtube.com/watch?v=sHKWD8XnmmY) by [Simon Pasquier](https://github.com/simonpasquier) and [Robust Perception Blog](https://www.robustperception.io/blog) by [Brian Brazil](https://github.com/brian-brazil).
+> The initial rules are gather from several sources from the community, such as [Prometheus Proverbs](https://www.youtube.com/watch?v=TwH3KXKbJqM) by [Björn Rabenstein](https://github.com/beorn7), [Best Practices and Beastly Pitfalls](https://www.youtube.com/watch?v=_MNYuTNfTb4) by [Julius Volz](https://github.com/juliusv), [Patterns for Instrumenting Your Go Services](https://www.youtube.com/watch?v=LU6D5cNeHks) by [Bartek Plotka](https://github.com/bwplotka) and [Kemal Akkoyun](https://github.com/kakkoyun), [Instrumenting Applications and Alerting with Prometheus](https://www.youtube.com/watch?v=sHKWD8XnmmY) by [Simon Pasquier](https://github.com/simonpasquier) and [Robust Perception Blog](https://www.robustperception.io/blog) by [Brian Brazil](https://github.com/brian-brazil).
