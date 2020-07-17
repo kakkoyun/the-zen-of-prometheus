@@ -54,7 +54,7 @@ If you can express as a counter, use a counter and do everything else later. Cou
 
 Be aware of [counter resets](https://www.robustperception.io/how-does-a-prometheus-counter-work).
 As stated in [Rate then sum, never sum then rate](https://www.robustperception.io/rate-then-sum-never-sum-then-rate).
-> As a rule of thump, the only mathematical operations you can safely directly apply to a counter's values are `rate`, `irate`, `increase`, and `resets`. Anything else will cause you problems.
+> As a rule of thumb, the only mathematical operations you can safely directly apply to a counter's values are `rate`, `irate`, `increase`, and `resets`. Anything else will cause you problems.
 
 ### If you can log it, you can have a metric for it
 
