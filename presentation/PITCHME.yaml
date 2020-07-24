@@ -14,4 +14,5 @@ theme-margins    : [ "0", "15px" ]
 logo             : assets/img/prometheus_logo.png
 logo-position    : top-left
 layout           : center
+published        : true
 # PITCHME-DOT-YAML-SETTINGS-THEME-BUILDER-GENERATED-END
