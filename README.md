@@ -3,6 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3dd90926-2cbe-4246-901d-5a2c8e8cd23e/deploy-status)](https://app.netlify.com/sites/the-zen-of-prometheus/deploys)
 
 Live: [The Zen of Prometheus](https://the-zen-of-prometheus.netlify.app/)
+[Presentation](https://gitpitch.com/kakkoyun/the-zen-of-prometheus/master?p=presentation)
 
 ## What open source tools I used to build this?
 
