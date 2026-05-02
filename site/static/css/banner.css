@@ -1,0 +1,38 @@
+.zen-banner {
+  margin: 0 0 1.5rem 0;
+  padding: 0.9rem 1.1rem;
+  background: #fff5eb;
+  border: 1px solid #f6b26b;
+  border-left: 4px solid #e6522c;
+  border-radius: 4px;
+  color: #3a2a1a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.zen-banner a {
+  color: #e6522c;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.zen-banner a:hover,
+.zen-banner a:focus {
+  color: #b53e1c;
+}
+
+@media (prefers-color-scheme: dark) {
+  .zen-banner {
+    background: #2a1f15;
+    border-color: #b56028;
+    border-left-color: #e6522c;
+    color: #f3e6d8;
+  }
+  .zen-banner a {
+    color: #ff8a5b;
+  }
+  .zen-banner a:hover,
+  .zen-banner a:focus {
+    color: #ffb38a;
+  }
+}

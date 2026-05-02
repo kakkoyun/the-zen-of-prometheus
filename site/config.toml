@@ -17,7 +17,7 @@ description = "Simple, Poetic, Illuminating."
 profilePicture = "images/prometheus.svg"
 keywords = ""
 favicon = "favicons/"
-customCss = []
+customCss = ["css/banner.css"]
 mainSections = ["home"]
 
 ## Math settings
