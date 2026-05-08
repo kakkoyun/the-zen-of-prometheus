@@ -1,3 +1,7 @@
++++
+title = "The Zen of Prometheus"
++++
+
 <div class="zen-banner" role="note">
   📣 <strong>Heads up — this is the original draft.</strong> The Zen of Prometheus is now part of the official Prometheus documentation. Read the up-to-date version at <a href="https://prometheus.io/docs/practices/the_zen/">prometheus.io/docs/practices/the_zen</a>.
 </div>
