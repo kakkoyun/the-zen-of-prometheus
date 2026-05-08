@@ -10,6 +10,10 @@
   line-height: 1.5;
 }
 
+.zen-banner strong {
+  color: #3a2a1a;
+}
+
 .zen-banner a {
   color: #e6522c;
   font-weight: 600;
@@ -19,20 +23,4 @@
 .zen-banner a:hover,
 .zen-banner a:focus {
   color: #b53e1c;
-}
-
-@media (prefers-color-scheme: dark) {
-  .zen-banner {
-    background: #2a1f15;
-    border-color: #b56028;
-    border-left-color: #e6522c;
-    color: #f3e6d8;
-  }
-  .zen-banner a {
-    color: #ff8a5b;
-  }
-  .zen-banner a:hover,
-  .zen-banner a:focus {
-    color: #ffb38a;
-  }
 }

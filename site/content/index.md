@@ -1,5 +1,5 @@
 +++
-title = "The Zen of Prometheus"
+title = ""
 +++
 
 <div class="zen-banner" role="note">
