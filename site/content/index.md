@@ -1,10 +1,7 @@
 +++
-title = ""
 +++
 
-<div class="zen-banner" role="note">
-  📣 <strong>Heads up — this is the original draft.</strong> The Zen of Prometheus is now part of the official Prometheus documentation. Read the up-to-date version at <a href="https://prometheus.io/docs/practices/the_zen/">prometheus.io/docs/practices/the_zen</a>.
-</div>
+{{< banner >}}
 
 **The Zen of Prometheus** is beginner friendly set of core values and guidelines for instrumenting your applications and writing idiomatic alerts using Prometheus.
 This is a document that's intended to maintained by the Prometheus community. Feel free to [contribute](https://github.com/kakkoyun/the-zen-of-prometheus/compare).

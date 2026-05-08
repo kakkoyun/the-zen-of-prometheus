@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="post animated fadeInDown">
+    <div class="post-content">
+
+      {{ with .Title }}
+      <div class="post-title">
+        <h3>{{ . }}
+        </h3>
+        {{ if eq $.Type "post"}}
+        <div class="info">
+          <i class="fa fa-sun-o"></i><span class="date">{{ $.Date.Format "Mon, Jan 2, 2006" }}</span>
+          <i class="fa fa-clock-o"></i><span class="reading-time">{{ $.ReadingTime }}-minute read</span>
+        </div>
+        {{ end }}
+        </div>
+      {{ end }}
+
+    {{ .Content }}
+    </div>
+    <div class="post-footer">
+      <div class="info">
+        {{ with .Page.Params.Categories }}{{ partial "taxonomy/categories.html" . }}{{ end }}
+        {{ with .Page.Params.Tags }}{{ partial "taxonomy/tags.html" . }}{{ end }}
+      </div>
+    </div>
+
+    {{ if eq .Type "post"}}
+    {{ if .Site.DisqusShortname -}}
+    <div id="fb_comments_container">
+      <h2>Comments</h2>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+    {{- end }}
+    {{ end }}
+</div>
+
+{{ end }}

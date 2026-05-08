@@ -20,10 +20,6 @@ favicon = "favicons/"
 customCss = ["css/banner.css"]
 mainSections = ["home"]
 
-## Allow raw HTML in markdown (needed for the banner block in content/index.md).
-[markup.goldmark.renderer]
-unsafe = true
-
 ## Math settings
 [params.math]
 enable = false  # options: true, false. Enable math support globally, default: false. You can always enable math on per page.
